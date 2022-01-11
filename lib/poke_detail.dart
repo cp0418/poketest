@@ -16,11 +16,12 @@ class _PokeDetailState extends State<PokeDetail> {
   var pokeDetail, pokeAbilities;
 
   _getPokeAbilities() async {
-    print(pokeName);
     var response = await PokemonSevice().getPokeAbility(pokeName);
     var body = jsonDecode(response.body);
-    pokeDetail = body;
-    pokeAbilities = body['abilities'];
+    setState(() {
+      pokeDetail = body;
+      pokeAbilities = body['abilities'];
+    });
   }
 
   @override

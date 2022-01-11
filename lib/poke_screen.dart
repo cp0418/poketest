@@ -113,6 +113,7 @@ class _PokeScreenState extends State<PokeScreen> {
             break;
           case "A-Z":
             print("a-z");
+
             break;
           case "Z-A":
             print("a-z");
