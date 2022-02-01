@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class PokeAppBar extends StatelessWidget {
-  PokeAppBar({Key? key, required this.appBarTitle}) : super(key: key);
+class CustomAppBar extends StatelessWidget {
+  CustomAppBar({Key? key, required this.appBarTitle}) : super(key: key);
   String appBarTitle;
 
   @override
